@@ -3,7 +3,7 @@ require 'poper'
 
 module Pronto
   class Poper < Runner
-    def run(patches, commit)
+    def run
       return [] unless patches
 
       poper_runner = ::Poper::Runner.new(commit, patches.owner.repo.path)
